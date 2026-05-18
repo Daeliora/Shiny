@@ -1,5 +1,6 @@
 import EmployeeCard from '../../components/EmployeeCard'
 import { employeesData } from '../../data/employees'
+import { useNavigate } from 'react-router-dom'
 import './Employees.css'
 
 function Employees() {

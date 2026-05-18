@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './ProjectCard.css'
 
 function ProjectCard({ project }) {
@@ -15,6 +16,7 @@ function ProjectCard({ project }) {
   }
 
   return (
+    <Link to={`/projects/${project.id}`} className="project-card-link">
     <div className="project-card">
       <div className="project-header">
         <h3>{project.name}</h3>
@@ -36,6 +38,7 @@ function ProjectCard({ project }) {
         <strong>Équipe :</strong> {project.team.join(', ')}
       </div>
     </div>
+    </Link>
   )
 }
 

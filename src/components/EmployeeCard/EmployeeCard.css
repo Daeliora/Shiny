@@ -1,3 +1,10 @@
+.employee-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+
 .employee-card {
   background: #1a1a1a;
   border-radius: 12px;
@@ -8,6 +15,7 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
 
 .employee-card:hover {
